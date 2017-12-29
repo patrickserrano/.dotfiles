@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Define project location
+PROJECT=$HOME/Sites/$@
+
+# Stop all running virtual machines
+vagrant halt all
+
+# Start virtual machine for project
+cd $PROJECT
+vagrant up
