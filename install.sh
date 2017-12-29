@@ -12,6 +12,7 @@ brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
+brew tap caskroom/versions
 brew bundle
 
 # Make ZSH the default shell environment
@@ -42,20 +43,29 @@ sudo -v
 sudo gem update
 
 # Copy .gemrc
-cp ~/dotfiles/.gemrc ~/.gemrc
+cp ~/.dotfiles/.gemrc ~/.gemrc
 
 # Set up Git
-cp ~/dotfiles/.gitconfig ~
-cp ~/dotfiles/.gitignore_global ~
+cp ~/.dotfiles/.gitconfig ~
+cp ~/.dotfiles/.gitignore_global ~
 
 # Copy nanorc file
 cp ~/dotfiles/.nanorc ~/
 
+# Download and install TextExpander 4 (Legacy)
+mkdir /tmp/TextExpander4
+cd /tmp/TextExpander4
+curl -sS http://cdn.smilesoftware.com/TextExpander_4.3.6.zip > TextExpander4.zip
+unzip TextExpander4.zip
+rm TextExpander4.zip
+cp -r TextExpander.app /Applications
+rm -r TextExpander.app
+
 # Set up Sublime Sync
-cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
-rm -r User
-ln -s ~/Dropbox/Developer/Sublime/User
+# cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+# rm -r User
+# ln -s ~/Dropbox/Developer/Sublime/User
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
-source ~/dotfiles/.macos
+source ~/.dotfiles/.macos
