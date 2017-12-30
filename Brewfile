@@ -51,6 +51,7 @@ brew 'wifi-password'
 # Apps
 cask '1password'
 cask 'adobe-creative-cloud'
+cask `authy`
 cask 'microsoft-azure-storage-explorer'
 cask 'caffeine'
 cask 'bestres'
