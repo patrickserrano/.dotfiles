@@ -19,14 +19,14 @@ brew bundle
 chsh -s $(which zsh)
 
 # Copy .zshrc file
-cp  ~/dotfiles/.zshrc ~
+cp  ~/.dotfiles/.zshrc ~
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Add ZSH aliases and path
-cp ~/dotfiles/aliases.zsh ~/.oh-my-zsh/custom
-cp ~/dotfiles/path.zsh  ~/.oh-my-zsh/custom
+cp ~/.dotfiles/aliases.zsh ~/.oh-my-zsh/custom
+cp ~/.dotfiles/path.zsh  ~/.oh-my-zsh/custom
 
 # Add shortcut to launch Sublime from Terminal
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
@@ -50,7 +50,7 @@ cp ~/.dotfiles/.gitconfig ~
 cp ~/.dotfiles/.gitignore_global ~
 
 # Copy nanorc file
-cp ~/dotfiles/.nanorc ~/
+cp ~/.dotfiles/.nanorc ~/
 
 # Download and install TextExpander 4 (Legacy)
 mkdir /tmp/TextExpander4
