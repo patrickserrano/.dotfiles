@@ -5,6 +5,7 @@ tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/dupes'
 tap 'homebrew/php'
+tap 'microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release'
 
 # Install ZSH
 brew 'zsh'
@@ -30,6 +31,9 @@ brew 'git'
 
 # Install Jrnl
 brew `jrnl`
+
+# Install MS SQL Tools
+HOMEBREW_NO_ENV_FILTERING=1 ACCEPT_EULA=y brew --no-sandbox msodbcsql mssql-tools
 
 # Install more recent versions of some macOS tools
 # brew 'homebrew/dupes/grep'
