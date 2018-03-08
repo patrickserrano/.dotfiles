@@ -19,14 +19,14 @@ brew bundle
 chsh -s $(which zsh)
 
 # Copy .zshrc file
-cp  ~/dotfiles/.zshrc ~
+cp  ~/.dotfiles/.zshrc ~
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Add ZSH aliases and path
-cp ~/dotfiles/aliases.zsh ~/.oh-my-zsh/custom
-cp ~/dotfiles/path.zsh  ~/.oh-my-zsh/custom
+cp ~/.dotfiles/aliases.zsh ~/.oh-my-zsh/custom
+cp ~/.dotfiles/path.zsh  ~/.oh-my-zsh/custom
 
 # Add shortcut to launch Sublime from Terminal
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
@@ -38,8 +38,15 @@ npm install --global yarn
 npm install --global grunt-cli
 npm install --global jslint
 
-# Ruby gems
-sudo -v
+# Copy .gemrc
+cp ~/.dotfiles/.gemrc ~/.gemrc
+
+# Accept GPG Key and install RVM
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+\curl -sSL https://get.rvm.io | bash -s stable --rails
+
+# Update Ruby gems
 sudo gem update
 
 # Copy .gemrc
@@ -50,7 +57,7 @@ cp ~/.dotfiles/.gitconfig ~
 cp ~/.dotfiles/.gitignore_global ~
 
 # Copy nanorc file
-cp ~/dotfiles/.nanorc ~/
+cp ~/.dotfiles/.nanorc ~/
 
 # Download and install TextExpander 4 (Legacy)
 mkdir /tmp/TextExpander4
