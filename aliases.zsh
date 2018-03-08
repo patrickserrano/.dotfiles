@@ -15,25 +15,25 @@ alias ..="cd .."
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-alias sites="cd $HOME/Sites"
+# alias sites="cd $HOME/Sites"
 alias dev="cd $HOME/Dropbox/Developer"
 alias desktop="cd $HOME/Desktop"
 alias dropbox="cd $HOME/Documents/Dropbox"
 alias downloads="cd $HOME/Downloads"
 
 # Vagrant
-alias v="vagrant global-status"
-alias vup="vagrant up"
-alias vhalt="vagrant halt"
-alias vssh="vagrant ssh"
-alias vreload="vagrant reload"
-alias vrebuild="vagrant destroy --force && vagrant up"
+# alias v="vagrant global-status"
+# alias vup="vagrant up"
+# alias vhalt="vagrant halt"
+# alias vssh="vagrant ssh"
+# alias vreload="vagrant reload"
+# alias vrebuild="vagrant destroy --force && vagrant up"
 
 # cd into whatever is the forefront Finder window
 cdf() { cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"; }
 
 # Empty the Trash on all mounted volumes and the main HDD
-# Also, clear Apple’s System Logs to improve shell startup speed
+# Also, clear Apple's System Logs to improve shell startup speed
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv $HOME/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
 # My IP

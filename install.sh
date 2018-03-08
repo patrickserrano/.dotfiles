@@ -29,7 +29,7 @@ cp ~/dotfiles/aliases.zsh ~/.oh-my-zsh/custom
 cp ~/dotfiles/path.zsh  ~/.oh-my-zsh/custom
 
 # Add shortcut to launch Sublime from Terminal
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
 # Install global NPM packages
 npm install --global npm@latest
