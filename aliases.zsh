@@ -10,6 +10,7 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;echo "✌️ DNS flushed"'
 alias py="python3"
 alias ..="cd .."
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 
 # Directories
