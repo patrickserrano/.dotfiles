@@ -49,15 +49,32 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 # Update Ruby gems
 sudo gem update
 
+# Install Python Packages
+pip3 install autopep8
+pip3 install azure
+pip3 install black
+pip3 install bottle
+pip3 install flake8
+pip3 install flake8-bugbear
+pip3 install flask
+pip3 install gunicorn
+pip3 install pylint
+pip3 install pyodbc
+pip3 install pytest
+
 # Copy .gemrc
 cp ~/.dotfiles/.gemrc ~/.gemrc
 
 # Set up Git
 cp ~/.dotfiles/.gitconfig ~
 cp ~/.dotfiles/.gitignore_global ~
+cp ~/.dotfiles/.gitmessage ~
 
 # Copy nanorc file
 cp ~/.dotfiles/.nanorc ~/
+
+# Install SF Mono
+cp /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/*.otf ~/Library/Fonts/
 
 # Download and install TextExpander 4 (Legacy)
 mkdir /tmp/TextExpander4
