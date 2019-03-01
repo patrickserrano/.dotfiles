@@ -37,6 +37,7 @@ npm update --global
 npm install --global yarn
 npm install --global grunt-cli
 npm install --global jslint
+npm install --global spaceship-prompt
 
 # Copy .gemrc
 cp ~/.dotfiles/.gemrc ~/.gemrc
