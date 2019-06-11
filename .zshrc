@@ -78,4 +78,4 @@ export LANG=en_US.UTF-8
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # env vars
-export PY_IS_PROD="true"
+export PY_IS_PROD="false"

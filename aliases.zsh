@@ -12,6 +12,8 @@ alias py="python3"
 alias ..="cd .."
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
+alias shopt="setopt"
+
 
 # Directories
 alias dotfiles="cd $DOTFILES"

@@ -1,12 +1,11 @@
 # Taps
 tap 'caskroom/cask'
-tap 'caskroom/fonts'
+# tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'heroku/brew'
 tap 'homebrew/bundle'
-tap 'homebrew/dupes'
 tap 'homebrew/php'
-tap 'microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release'
+tap 'microsoft/mssql-release'
 
 
 # Install ZSH
@@ -35,7 +34,8 @@ brew 'git'
 brew 'jrnl'
 
 # Install MS SQL Tools
-HOMEBREW_NO_ENV_FILTERING=1 ACCEPT_EULA=y brew --no-sandbox msodbcsql mssql-tools
+brew 'msodbcsql17'
+brew 'mssql-tools'
 
 # Install more recent versions of some macOS tools
 # brew 'homebrew/dupes/grep'
@@ -66,30 +66,35 @@ cask 'bestres'
 cask 'caffeine'
 cask 'dash'
 cask 'dash'
-cask 'datagrip'
+cask 'docker-toolbox'
 cask 'dotnet'
 cask 'dropbox'
 cask 'filezilla'
 cask 'fluid'
 cask 'google-chrome'
 cask 'gpgtools'
-cask 'harvest'
+cask 'gfxstatus'
 cask 'imageoptim'
 cask 'iterm2'
+cask 'lepton'
 cask 'libreoffice'
 cask 'microsoft-azure-storage-explorer'
 cask 'microsoft-office'
+cask 'mongodb-compass'
+cask 'mjml'
+cask 'muzzle'
+cask 'postman'
 cask 'quitter'
+cask 'ripcord'
+cask 'robo-3t'
 cask 'skype'
 cask 'slack-beta'
+cask 'soulver'
 cask 'spectacle'
 cask 'spectacle'
 cask 'spotify'
 cask 'sublime-text'
-cask 'vagrant'
-cask 'virtualbox-extension-pack'
-cask 'virtualbox'
-cask 'visual-studio-code-insiders'
+cask 'transmit'
 cask 'visual-studio-code'
 
 # Quicklook
@@ -110,7 +115,6 @@ mas 'Byword', id: 420212497
 mas 'Cinch', id: 412529613
 mas 'Deliveries', id: 924726344
 mas 'Microsoft Remote Desktop 10', id: 1295203466
-mas 'Soulver', id: 413965349
 mas 'StopTheMadness', id: 1376402589
 mas 'Tweetbot', id: 557168941
 mas "Xcode", id: 497799835
